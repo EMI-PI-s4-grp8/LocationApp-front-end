@@ -1,8 +1,8 @@
 //https://bootsnipp.com/tags/login/4
 import React from 'react';
-import { Button, Form, FormControl, FormGroup, FormLabel } from 'reactstrap';
 
-const Badges = () => {
+import "./RegisterForm.css"
+const LogInPage = () => {
     return (
         <div>
      <h1>connexion page</h1>
@@ -39,7 +39,7 @@ const Badges = () => {
     <div className="form-group">
         <button type="submit" className="btn btn-primary btn-block"> Log In </button>
     </div>    
-    <p className="text-center">You dont't Have an account? <a href="./badge#/ui-components/button">Register Now</a> </p>                                                                 
+    <p className="text-center">You dont't Have an account? <a href="./LogIn#/ui-components/RegisterPage">Register Now</a> </p>                                                                 
 </form>
 </article>
 </div> 
@@ -62,7 +62,7 @@ const Badges = () => {
     );
 }
 
-export default Badges;
+export default LogInPage;
            
 
     

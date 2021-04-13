@@ -1,16 +1,8 @@
 // https://bootsnipp.com/tags/registration
 import React, { useState } from 'react';
-import {
-    Button,
-    ButtonGroup,
-    Card,
-    CardBody,
-    CardTitle,
-    Row,
-    Col
-} from 'reactstrap';
+
 import "./RegisterForm.css"
-const Buttons = () => {
+const RegisterPage = () => {
 
  
     return (
@@ -90,7 +82,7 @@ const Buttons = () => {
     <div className="form-group">
         <button type="submit" className="btn btn-primary btn-block"> Create Account  </button>
     </div>    
-    <p className="text-center">Have an account? <a href="./badge#/ui-components/badge">Log In</a> </p>                                                                 
+    <p className="text-center">Have an account? <a href="./LogIn#/ui-components/LogInPage">Log In</a> </p>                                                                 
 </form>
 </article>
 </div> 
@@ -107,4 +99,4 @@ const Buttons = () => {
     );
 }
 
-export default Buttons;
+export default RegisterPage;
