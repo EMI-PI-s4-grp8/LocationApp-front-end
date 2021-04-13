@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="footer text-center">
-            All Rights Reserved by Material-Pro admin. Designed and Developed by{' '}
-            <a href="https://www.wrappixel.com">WrapPixel</a>.
+              All Rights Reserved .
+            <a href="https://github.com/EMI-PI-s4-grp8">Logement App</a>.
         </footer>
     );
 }
