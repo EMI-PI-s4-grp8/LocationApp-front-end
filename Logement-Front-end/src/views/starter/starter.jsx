@@ -1,13 +1,16 @@
 import React ,{useState,useEffect} from 'react';
 import axios from "axios";
-import {
-    Row,
-    Col
-} from 'reactstrap';
-import { SalesSummary, Projects, Feeds, SocialCards } from '../../components/dashboard-components';
+//import { Row,Col} from 'reactstrap';
+//import { SalesSummary, Projects, Feeds, SocialCards } from '../../components/dashboard-components';
 import LogementRow from '../../components/LogementRow/LogementRow';
 
 function Starter()  {
+
+    const deleteLogement =() =>{
+        alert("do you want really to delete it ??");
+        console.log("teesst");
+  
+      }
     const [stateLogement, setLogement] = useState([])
    
    
@@ -26,12 +29,7 @@ function Starter()  {
        })
         .catch(err => alert(err));
    };
-
-
-
-
-
-
+   
     return (
         <div>
    {/* { console.log(stateLogement.[0])} */}
@@ -39,6 +37,7 @@ function Starter()  {
 <table className="table"> 
   <thead>
     <tr>
+    {/* <th scope="col">Select</th> */}
       <th scope="col">#id</th>
       <th scope="col">intitule</th>
       <th scope="col">description</th>
@@ -47,7 +46,8 @@ function Starter()  {
     </tr>
   </thead>
   <tbody>
-  <LogementRow stateLogement={stateLogement} />
+  {/* on envoie les data viens de L'API avec get , et aussi on envoie une fct deleteLogement par props */}
+  <LogementRow stateLogement={stateLogement} deleteLogement={deleteLogement} />
 
      
    
