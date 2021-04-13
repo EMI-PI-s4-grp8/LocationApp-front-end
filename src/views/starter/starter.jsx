@@ -37,8 +37,8 @@ function Starter()  {
 <table className="table"> 
   <thead>
     <tr>
-    {/* <th scope="col">Select</th> */}
-      <th scope="col">#id</th>
+    <th scope="col">Select</th>
+      {/* <th scope="col">#id</th> */}
       <th scope="col">intitule</th>
       <th scope="col">description</th>
       <th scope="col">prix</th>
