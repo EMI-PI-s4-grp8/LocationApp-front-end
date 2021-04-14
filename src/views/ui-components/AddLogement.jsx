@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
 import "./RegisterForm.css"
+import links from './Links4Axios/Links';
 function AddLogement() {
 //  // For Dismiss Button with Alert
 //  const [visible, setVisible] = useState(true);
@@ -29,13 +30,13 @@ function AddLogement() {
    console.log(data);
         //we can add validation here
         // he used react rooter , roote ,Link .. https://www.youtube.com/watch?v=BM3xOXgxuk4&list=PLxnmNhAZjt7wHyMuaqkjXzKBBwAiCxIR7&index=14 
-    
+   // console.log(links[0].linkPost)
     postLogement(data);
     };
 
 const postLogement = data => {
     axios
-    .post("http://localhost:8082/logement",data)
+    .post(links[0].linkPost,data)
     .then(d => {
         console.log(d);
     })

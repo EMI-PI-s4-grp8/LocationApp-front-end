@@ -3,6 +3,7 @@ import axios from "axios";
 //import { Row,Col} from 'reactstrap';
 //import { SalesSummary, Projects, Feeds, SocialCards } from '../../components/dashboard-components';
 import LogementRow from '../../components/LogementRow/LogementRow';
+import links from '../ui-components/Links4Axios/Links';
 
 function Starter()  {
 
@@ -22,7 +23,7 @@ function Starter()  {
 
    const getLogement = () =>{
        axios
-       .get("http://localhost:8082/logements")
+       .get(links[0].linkGet)
        .then(data=> {
            console.log(data.data);
            setLogement(data.data);
