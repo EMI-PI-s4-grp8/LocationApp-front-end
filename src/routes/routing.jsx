@@ -16,6 +16,7 @@ import BootstrapDocs from '../views/ui-components/bootstrapDocs.jsx';
 // import PopoverComponent from '../views/ui-components/popover.jsx';
 // import TooltipComponent from '../views/ui-components/tooltip.jsx';
 import RegisterPage from '../views/ui-components/Register.jsx';
+import AddLogement from '../views/ui-components/AddLogement.jsx';
 
 var ThemeRoutes = [
   {
@@ -24,12 +25,12 @@ var ThemeRoutes = [
     icon: 'mdi mdi-adjust',
     component: FirstDashboard
   },
-  // {
-  //   path: '/ui-components/connexion',
-  //   name: 'Experiences',
-  //   icon: 'mdi mdi-comment-processing-outline',
-  //   component: Alerts
-  // },
+  {
+    path: '/ui-components/AddLogement',
+    name: 'Ajouter Logement',
+    icon: 'mdi mdi-comment-processing-outline',
+    component: AddLogement
+  },
   {
     path: '/ui-components/LogInPage',
     name: 'Connexion',

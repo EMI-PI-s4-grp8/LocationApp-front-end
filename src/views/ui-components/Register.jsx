@@ -1,5 +1,6 @@
 // https://bootsnipp.com/tags/registration
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import "./RegisterForm.css"
 const RegisterPage = () => {
@@ -82,7 +83,8 @@ const RegisterPage = () => {
     <div className="form-group">
         <button type="submit" className="btn btn-primary btn-block"> Create Account  </button>
     </div>    
-    <p className="text-center">Have an account? <a href="./LogIn#/ui-components/LogInPage">Log In</a> </p>                                                                 
+    <p className="text-center">Have an account? 	<a href="./LogIn#/ui-components/LogInPage">Log In</a>      </p>  
+     {/* <Link to="./LogIn#/ui-components/LogInPage">Log In</Link>                                                         */}
 </form>
 </article>
 </div> 
