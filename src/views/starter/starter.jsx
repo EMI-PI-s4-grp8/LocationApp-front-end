@@ -71,6 +71,8 @@ function Starter() {
                     <tr>
                     <th>
               <input
+              //I have a WARN here , where I check any checkbox , it works ,, but I didn't find the solution 
+              //I had the same WARN in FormEdit , but I fix it by || ""
             //  value={stateLogement.id  || ''}  htmlFor=""
                 type="checkbox"
                 onChange={e => {
