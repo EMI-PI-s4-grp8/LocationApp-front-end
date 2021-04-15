@@ -1,77 +1,59 @@
-import React ,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from "axios";
-//import { Row,Col} from 'reactstrap';
-//import { SalesSummary, Projects, Feeds, SocialCards } from '../../components/dashboard-components';
 import LogementRow from '../../components/LogementRow/LogementRow';
 import links from '../ui-components/Links4Axios/Links';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import FormEditLog from '../../components/FormEditLog/FormEditLog';
 
-function Starter()  {
+function Starter() {
 
-    const deleteLogement =() =>{
+    const deleteLogement = () => {
         alert("do you want really to delete it ??");
         console.log("teesst");
-  
-      }
+
+    }
     const [stateLogement, setLogement] = useState([])
-   
-   
+
+
     useEffect(() => {
 
-    getLogement();
+        getLogement();
 
-   },[] );
+    }, []);
 
-   const getLogement = () =>{
-       axios
-       .get(links[0].linkGet)
-       .then(data=> {
-           console.log(data.data);
-           setLogement(data.data);
-       })
-        .catch(err => alert(err));
-   };
-   
+    const getLogement = () => {
+        axios
+            .get(links[0].linkGet)
+            .then(data => {
+                console.log(data.data);
+                setLogement(data.data);
+            })
+            .catch(err => alert(err));
+    };
+
     return (
         <div>
-   {/* { console.log(stateLogement.[0])} */}
 
-<table className="table"> 
-  <thead>
-    <tr>
-    <th scope="col">Select</th>
-      {/* <th scope="col">#id</th> */}
-      <th scope="col">intitule</th>
-      <th scope="col">description</th>
-      <th scope="col">prix</th>
-      <th scope="col">image</th>
-    </tr>
-  </thead>
-  <tbody>
-  {/* on envoie les data viens de L'API avec get , et aussi on envoie une fct deleteLogement par props */}
-  <LogementRow stateLogement={stateLogement} deleteLogement={deleteLogement} />
+            <Router>
+                {/* //for the elements that will be shown selon les paths */}
+                <Switch>
+                    <Route exact path="/">
+                        <LogementRow stateLogement={stateLogement} deleteLogement={deleteLogement} />
+                    </Route>
+                    <Route exact path="/starter/starter/edit/:id">
+                       <FormEditLog />
+                    </Route>
 
-     
-   
-  </tbody>
-</table>
-            {/* <Row>
-                <Col sm={6} lg={8}>
-                    <SalesSummary />
-                </Col>
-                <Col sm={6} lg={4}>
-                    <Feeds />
-                </Col>
-            </Row>
-            <Row>
-                <Col sm={12}>
-                    <Projects />
-                </Col>
-            </Row>*/}
+                </Switch>
+
+
+            </Router>
 
 
 
-            {/* <SocialCards /> 
-            <SocialCards />  */}
+
+
+
         </div>
     );
 }

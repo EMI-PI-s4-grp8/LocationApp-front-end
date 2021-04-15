@@ -14,6 +14,7 @@ import AddLogement from '../views/ui-components/AddLogement.jsx';
 var ThemeRoutes = [
   {
     path: '/starter/starter',
+  //  path: '/',
     name: 'Dashboard',
     icon: 'mdi mdi-adjust',
     component: FirstDashboard
@@ -47,6 +48,7 @@ var ThemeRoutes = [
   {
     path: '/',
     pathTo: '/starter/starter',
+   // pathTo: '/',
     name: 'Dashboard',
     redirect: true
   }
