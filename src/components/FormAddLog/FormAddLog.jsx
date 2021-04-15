@@ -1,11 +1,8 @@
 import React from 'react'
 
-function FormAddLog() {
+function FormAddLog(props) {
     return (
         <div>
-            
-
-
             <div className="d-flex justify-content-center">
             
             <div className="row col-lg-4 col-lg-offset-4" style={{
@@ -21,7 +18,7 @@ function FormAddLog() {
        <form  onSubmit={
            (e) => {
                e.preventDefault();
-               submit(e);
+               props.submit(e);
 
            }
        } >

@@ -37,7 +37,7 @@ const postLogement = data => {
     return (
       <div>
 
-<FormAddLog />
+<FormAddLog submit={submit} />
 
       </div>
 

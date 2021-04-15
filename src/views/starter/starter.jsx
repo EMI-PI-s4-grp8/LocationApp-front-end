@@ -9,6 +9,10 @@ function Starter() {
 
     const deleteLogement = () => {
         alert("do you want really to delete it ??");
+        axios.delete(`https://logement-app-api.herokuapp.com/logement/${id}`)
+        .then(d => {
+     
+    }).catch(err => alert(err))
         console.log("teesst");
 
     }
@@ -33,27 +37,17 @@ function Starter() {
 
     return (
         <div>
-
             <Router>
                 {/* //for the elements that will be shown selon les paths */}
                 <Switch>
                     <Route exact path="/">
                         <LogementRow stateLogement={stateLogement} deleteLogement={deleteLogement} />
                     </Route>
-                    <Route exact path="/starter/starter/edit/:id">
-                       <FormEditLog />
+                    <Route exact path="/starter/starter/edit/:id" render={props => <FormEditLog />}>
+                       
                     </Route>
-
                 </Switch>
-
-
             </Router>
-
-
-
-
-
-
         </div>
     );
 }
