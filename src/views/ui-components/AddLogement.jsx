@@ -3,6 +3,7 @@ import axios from "axios";
 import "./RegisterForm.css"
 import links from './Links4Axios/Links';
 import FormAddLog from '../../components/FormAddLog/FormAddLog';
+import { withRouter } from "react-router-dom";
 function EditLogement() {
     const submit = e =>{
         let intitule =  e.target[0].value;
@@ -24,6 +25,10 @@ function EditLogement() {
         // he used react rooter , roote ,Link .. https://www.youtube.com/watch?v=BM3xOXgxuk4&list=PLxnmNhAZjt7wHyMuaqkjXzKBBwAiCxIR7&index=14 
    // console.log(links[0].linkPost)
     postLogement(data);
+  //  browserHistory.push('/');
+   // props.history.push("/");
+  
+
     };
 
 const postLogement = data => {
@@ -31,6 +36,8 @@ const postLogement = data => {
     .post(links[0].linkPost,data)
     .then(d => {
         console.log(d);
+ alert("Logement Added !")
+
     })
     .catch(err => alert(err));
 };
@@ -44,6 +51,6 @@ const postLogement = data => {
     )
 }
 
-export default EditLogement;
+export default withRouter(EditLogement);
 
 

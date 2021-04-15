@@ -6,15 +6,11 @@ const links = [
         key: 1,
         linkGet: "http://localhost:8082/logements/",
         linkPost: "http://localhost:8082/logement/"
-
     },
-
     {
         key: 2,
-
         linkGet: "https://logement-app-api.herokuapp.com/logements/",
         linkPost: "https://logement-app-api.herokuapp.com/logement/"
     }
-
 ];
 export default links;

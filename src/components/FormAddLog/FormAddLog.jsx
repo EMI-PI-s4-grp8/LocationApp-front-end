@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter } from 'react-router';
 
 function FormAddLog(props) {
     return (
@@ -19,6 +20,8 @@ function FormAddLog(props) {
            (e) => {
                e.preventDefault();
                props.submit(e);
+             //  props.history.push("/");
+
 
            }
        } >
@@ -75,4 +78,4 @@ function FormAddLog(props) {
     )
 }
 
-export default FormAddLog;
+export default withRouter( FormAddLog) ;
