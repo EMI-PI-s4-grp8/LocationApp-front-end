@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import LogementRow from '../../components/LogementRow/LogementRow';
 import links from '../ui-components/Links4Axios/Links';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom"
 import FormEditLog from '../../components/FormEditLog/FormEditLog';
 import Spinner from '../../components/Spinner/Spinner';
+import RatingApp from '../../components/RatingApp/RatingApp';
 
 function Starter() {
 
@@ -93,6 +94,28 @@ function Starter() {
       >
         Supprimer toutes les logements selectionnes
       </button>
+
+
+      
+{/*       
+      <Link to={`/starter/starter/rate`}>
+      <button
+        className="btn btn-info btn-sm m-2"
+        onClick={() => {
+        }}
+      >
+      Evaluer Notre Application
+      </button>    </Link>
+                    <Route exact path="/starter/starter/rate" render={props => <RatingApp/>}>
+                     <button
+        className="btn btn-info btn-sm m-2"
+        onClick={() => {
+        }}
+      >
+      Evaluer Notre Application
+      </button>  
+                    </Route> */}
+      
             <table className="table">
                 <thead>
                     <tr>

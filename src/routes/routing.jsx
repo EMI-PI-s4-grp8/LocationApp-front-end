@@ -10,6 +10,7 @@ import LogInPage from '../views/ui-components/LogIn.jsx';
 import BootstrapDocs from '../views/ui-components/bootstrapDocs.jsx';
 import RegisterPage from '../views/ui-components/Register.jsx';
 import AddLogement from '../views/ui-components/AddLogement.jsx';
+import RatingApp from '../components/RatingApp/RatingApp.jsx';
 
 var ThemeRoutes = [
   {
@@ -45,6 +46,12 @@ var ThemeRoutes = [
     icon: 'mdi mdi-react',
     component: BootstrapDocs
   },
+   {
+    path: '/components/RatingApp/RatingApp',
+    name: 'Evaluation App',
+    icon: 'mdi mdi-credit-card-multiple',
+    component: RatingApp
+  },
   {
     path: '/',
     pathTo: '/starter/starter',
@@ -57,12 +64,7 @@ var ThemeRoutes = [
 export default ThemeRoutes;
 
 
- // {
-  //   path: '/ui-components/card',
-  //   name: 'Contact',
-  //   icon: 'mdi mdi-credit-card-multiple',
-  //   component: Cards
-  // },
+
   // {
   //   path: '/ui-components/layout',
   //   name: 'Layout',
