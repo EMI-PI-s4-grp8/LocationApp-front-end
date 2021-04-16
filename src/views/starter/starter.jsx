@@ -91,7 +91,7 @@ function Starter() {
           deleteLogementsByIds();
         }}
       >
-        Delete ALL Customer
+        Supprimer toutes les logements selectionnes
       </button>
             <table className="table">
                 <thead>
