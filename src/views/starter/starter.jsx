@@ -4,6 +4,7 @@ import LogementRow from '../../components/LogementRow/LogementRow';
 import links from '../ui-components/Links4Axios/Links';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import FormEditLog from '../../components/FormEditLog/FormEditLog';
+import Spinner from '../../components/Spinner/Spinner';
 
 function Starter() {
 
@@ -51,8 +52,34 @@ function Starter() {
           .catch(err => alert(err));
       };
 
+
+   
+    //     const [ spinner, setSpinner ] = useState(true);
+      
+    //     // It will be executed before rendering
+      
+    //     useEffect(() => {
+    //       setTimeout(() => setSpinner(false), 1000)
+    //     }, []);
+      
+    //     // [] means like componentDidMount
+    //   return !spinner && <div>aiojakam</div>
+
+
+//I need to use a hook for managing the state of application 
+
+//     const [isLoaded, setIsLoaded] = useState(true);
+
+//   const handleIsLoadedToggle = () => {
+//     setIsLoaded(currentIsLoaded => !currentIsLoaded)
+//   };
+         
     return (
-        <div>
+        
+         <div> 
+         
+         {/* {isLoaded &&      <Spinner />} */}
+        <Spinner />
             <Router>
                 {/* //for the elements that will be shown selon les paths */}
                 <Switch>
