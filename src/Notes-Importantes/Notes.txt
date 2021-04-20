@@ -1,4 +1,18 @@
+ce que j'ai fait :
+I- implementation des quatre UCs : CRUD (Create, read, update and delete (including delete all)) des Logements avec React Js et Spring Boot en se basant sur l'architecture microservice aux lieu de l'architecture monolethique .
+II- l'utilisation des sinq etoiles pour l'evaluation aux lieu de l'evaluation avec des number inputs(selon la remaruqe du prof).
+III- deploiment des trois applications sur Heroku avec leurs bases de donnees : 
+1-l'application monolethique qu'on a travaille sur auparaments :  https://location-app-monolithic.herokuapp.com/
+2-l'application spring boot (backend) qui offre l'api (cote serveur et base de donnees) : https://logement-app-api.herokuapp.com/logements
+3-l'application reactJs qui manipule l'api sur le cote client:  https://logement-app-front-end.herokuapp.com/#/starter/starter
+IV- Creation des interface : connection - Inscription avec haute fidelite aux nos UIs (maquettes).
+V- notre organisation sur Github qui contient les 3 code sources : https://github.com/EMI-PI-s4-grp8
+#Best Tuto
+https://www.youtube.com/watch?v=rpn-86MhsRM&list=PLxnmNhAZjt7wHyMuaqkjXzKBBwAiCxIR7&index=12
+https://logement-app-front-end.herokuapp.com/#/starter/starter
 https://icons.getbootstrap.com/
+
+
 https://logement-app-api.herokuapp.com/logements
 https://logement-app-api.herokuapp.com/logement
 https://logement-app-api.herokuapp.com/logement/1

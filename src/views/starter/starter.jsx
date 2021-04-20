@@ -80,7 +80,7 @@ function Starter() {
          <div> 
          
          {/* {isLoaded &&      <Spinner />} */}
-        <Spinner />
+    
             <Router>
                 {/* //for the elements that will be shown selon les paths */}
                 <Switch>
@@ -154,7 +154,9 @@ function Starter() {
                     <Route exact path="/starter/starter/edit/:id" render={props => <FormEditLog />}>
                        
                     </Route>
+                   
                 </Switch>
+                 <Spinner />
             </Router>
         </div>
     );

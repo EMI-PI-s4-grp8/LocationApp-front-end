@@ -23,13 +23,19 @@ var ThemeRoutes = [
   {
     path: '/ui-components/AddLogement',
     name: 'Ajouter Logement',
-    icon: 'mdi mdi-comment-processing-outline',
+    icon: 'mdi mdi-plus',
     component: AddLogement
+  },
+  {
+    path: '/components/RatingApp/RatingApp',
+    name: 'Evaluation App',
+    icon: 'mdi mdi-star',
+    component: RatingApp
   },
   {
     path: '/ui-components/LogInPage',
     name: 'Connexion',
-    icon: 'mdi mdi-arrange-send-backward',
+    icon: 'mdi mdi-account-box',
     component: LogInPage
   },
   {
@@ -39,19 +45,14 @@ var ThemeRoutes = [
     component: RegisterPage
   },
  
-  {
-    path: '/ui-components/bootstrapDocs',
-    name: 'BootstrapDocs',
+  // {
+  //   path: '/ui-components/bootstrapDocs',
+  //   name: 'BootstrapDocs',
 
-    icon: 'mdi mdi-react',
-    component: BootstrapDocs
-  },
-   {
-    path: '/components/RatingApp/RatingApp',
-    name: 'Evaluation App',
-    icon: 'mdi mdi-credit-card-multiple',
-    component: RatingApp
-  },
+  //   icon: 'mdi mdi-react',
+  //   component: BootstrapDocs
+  // },
+
   {
     path: '/',
     pathTo: '/starter/starter',
